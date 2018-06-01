@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于共友-共友简介</title>
+		<style type="text/css">
+			/*标题*/
+			body{
+				margin:0;
+				padding:0;
+			}
+			#big{
+				width: 100%;
+				height: 100%;
+			}
+			#shang{
+				width: 1920px
+				height: 150px;
+				background-color: black;
+			}
+			#shangzhong{
+				width: 1142px;
+				height: 150px;
+				margin: 0 auto;
+				position: relative;
+			}
+			#logozi{
+				width: 200px;
+				height: 80px;
+				background-image: url(./img/logozi.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 40px;
+			}
+			#shangdianhua{
+				width: 40px;
+				height: 40px;
+				border-radius:50%;
+				background-image: url(./img/dianhua.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 60px;
+				left: 490px;
+			}
+			#shangzi1{
+				width: 240px;
+				height: 20px;
+				position: absolute;
+				left: 540px;
+				top: 70px;
+				color: white;
+				font-size: 17px;
+			}
+			#shanggouwuche{
+				width: 40px;
+				height: 40px;
+				border-radius:50%;
+				background-image: url(./img/gouwuche.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 60px;
+				left: 800px;
+			}
+			#shangzi2{
+				width: 240px;
+				height: 20px;
+				position: absolute;
+				left: 850px;
+				top: 69px;
+				color: white;
+				font-size: 17px;
+			}
+			#shangrentou{
+				width: 40px;
+				height: 40px;
+				border-radius:50%;
+				background-image: url(./img/rentou.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 60px;
+				left: 930px;
+			}
+			#shangzi3{
+				width: 240px;
+				height: 20px;
+				position: absolute;
+				left: 980px;
+				top: 69px;
+				color: white;
+				font-size: 17px;
+			}
+			#shangshuxian{
+				width:1px ;
+				height: 30px;
+				border: 1px solid white;
+				position: absolute;
+				left: 787px;
+				top: 65px;
+				background-color: white;
+			}
+			
+			/*一级菜单*/
+			#caidan {
+	width: 100%;
+	height: 50px;
+	background-color: gray;
+}
+#caidanzhong {
+	width: 1140px;
+	height: 50px;
+	margin-left: 270px;
+	margin-top:0 ;
+}
+#caidanzi1 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+#caidanzi2 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	margin-left: 140px;
+}
+#caidanzi3 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	margin-left: 140px;
+}
+#caidanzi4 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	margin-left: 120px;
+}
+#caidanzi5 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	margin-left: 140px;
+}
+#caidanzi6 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	margin-left: 120px;
+}
+.caidan a {
+	font-size: 18px;
+	font-weight: 300;
+	color: black;
+	text-decoration: none;
+}
+.caidan a:visited {
+	color: orange;
+}
+			/*头部背景图*/
+			#beijing {
+	width: 100%;
+	height: 630px;
+	position: relative;
+}
+#beijingzi1 {
+	width: 100px;
+	height: 25px;
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+	left: 675px;
+	top: 483px;
+	font-family: "微软雅黑";
+}
+#beijingzi2 {
+	width: 100px;
+	height: 25px;
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+	left: 911px;
+	top: 483px;
+	font-family: "微软雅黑";
+}
+#beijingzi3 {
+	width: 100px;
+	height: 25px;
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+	left: 1150px;
+	top: 483px;
+	font-family: "微软雅黑";
+}
+.a a {
+	text-decoration: none;
+	color: black;
+}
+		/*二级菜单*/
+			#caidan2 {
+				width: 60%;
+				height: 80px;
+				margin: 0 auto;
+				/*background-color: red;*/
+			}
+			#caidan2zi2 {
+				width: 180px;
+				height: 80px;
+				/*background-color: gold;*/
+				line-height: 80px;
+				float: right;
+				margin-right:688px;
+				
+			}
+			
+			#caidan2zi1 a {
+				text-decoration: none;
+				color: black;
+				line-height: 80px;
+			}
+			
+			#caidan2 {
+				position: relative;
+			}
+		/*身体中第一块*/	
+			#stzhong{
+				width: 60%;
+				height: 1100px;
+				margin: 0 auto;
+			}
+			#st1title{
+				width: 100%;
+				height: 80px;
+				position: relative;
+				/*background-color: gold;*/
+				text-align: center;
+				height: 80px;
+				color: #9d9d9d;
+				margin: 0 auto;
+				font-family: "宋体";
+				font-size: 48px;
+			}
+			#st1titlebeijingzi{
+				width: 150px;
+				height: 50px;
+				/*background-color: red;*/
+				font-family: "微软雅黑";
+				font-size: 36px;
+				font-weight: bold;
+				color: black;
+				position: absolute;
+				top: 15px;
+				left: 420px;
+			}
+		/*身体第一块背景图*/
+			#st1beijing{
+				width: 100%;
+				height: 690px;
+				background-image: url(img/jianjie-03.png);
+			}
+			
+			#st1zi{
+				margin-top: 75px;
+				width: 100%;
+				height: 180px;
+				font-family: "黑体";
+				font-size: 18px;
+				font-weight: 300;
+				margin-bottom: 87px;
+			}
+			
+			/*脚部*/
+			#foot{
+				width: 100%;
+				height: 264px;
+				background-color: #111111;
+			}
+			#footzhong{
+				width: 1100px;
+				height: 264px;
+				margin: 0 auto;
+			}
+			#footzuo{
+				width: 520px;
+				height: 264px;
+				float: left;
+				position: relative;
+			}
+			#footzi1{
+				font-size: 25px;
+				font-weight: 700;
+				color: white;
+				margin-top: 75px;
+			}
+			#footzi2{
+				font-size: 25px;
+				font-weight: 700;
+				color: white;
+				margin-top: 25px;
+			}
+			#footzi3{
+				font-size: 25px;
+				font-weight: 700;
+				color: white;
+				margin-top: 25px;
+			}
+			#footyou{
+				width: 185px;
+				height:264px ;
+				float: right;
+				position: relative;
+			}
+			#footzi4{
+				width: 185px;
+				height: 30px;
+				border: 3px solid white;
+				text-align: center;
+				line-height: 30px;
+				color: white;
+				font-size: 18px;
+				font-weight: 700;
+				margin-top: 90px;
+			}
+			#footqq{
+				width: 25px;
+				height: 60px;
+				background-image: url(./img/qq.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 140px;
+			}
+			#footwx{
+				width: 40px;
+				height: 60px;
+				background-image: url(./img/wx.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 143px;
+				left: 73px;
+			}
+			#footfx{
+				width: 35px;
+				height: 80px;
+				background-image: url(./img/fx.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 140px;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="bigdiv">
+			<div id="shang">
+				<div id="shangzhong">
+					<div id="logozi"></div>
+					<div id="shangdianhua"></div>
+					<div id="shangzi1">客服/招商热线：300-233-4282</div>
+					<div id="shangshuxian"></div>
+					<div id="shanggouwuche"></div>
+					<div id="shangzi2">共友定制</div>
+					<div id="shangrentou"></div>
+					<div id="shangzi3">游客/经销商登录</div>
+				</div>
+			</div>
+			<!--标题结束上-->
+				<!--菜单-->
+		<div id="caidan">
+			<div id="caidanzhong">
+				<div id="caidanzi1" class="caidan">
+					<a href="#">首页</a>
+				</div>
+				<div id="caidanzi2" class="caidan">
+					<a href="#">关于共友</a>
+				</div>
+				<div id="caidanzi3" class="caidan">
+					<a href="#">我们的服务</a>
+				</div>
+				<div id="caidanzi4" class="caidan">
+					<a href="#">咨询中心</a>
+				</div>
+				<div id="caidanzi5" class="caidan">
+					<a href="#">加入我们</a>
+				</div>
+				<div id="caidanzi6" class="caidan">
+					<a href="#">我们的业务</a>
+				</div>
+			</div>
+		</div>
+				<!--一级菜单结束-->
+				<!--头部背景-->
+				<!--背景图-->
+		<div id="beijing">
+			<div id="beijingzi">
+				<img src="./img/beijing.png" style="width: 100%; height: 910;" />
+
+				<div id="beijingzi1" class="a">
+					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				</div>
+				<div id="beijingzi2" class="a">
+					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				</div>
+				<div id="beijingzi3" class="a">
+					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				</div>
+
+			</div>
+		</div>
+				<!--背景图结束-->
+				<!--二级菜单-->
+				<div id="caidan2">
+				<div id="caidan2zi1">
+				首页》 &nbsp;
+				<a href="">关于共友</a>
+				<div id="caidan2zi2">》&nbsp;公司简介</div>
+				</div>
+			</div>
+				<!--二级菜单结束-->
+				<!--身体部分简介-->
+				<div id="stzhong">
+					<div id="st1title">
+						
+							GY&nbsp;APSTRACT
+							<div id="st1titlebeijingzi">
+								共友简介
+							
+						</div>
+					</div>
+					<div id="st1beijing">
+						
+					</div>
+					<div id="st1zi">
+<pre>
+	&nbsp;&nbsp;&nbsp;&nbsp;我们共友家居有限责任公司是集现代新型家具设计、制造、销售、安装、售后服务为一体的股份制企业。主
+	营当前欧美流行的现代板式家具。传统家具在款式和环保性能上越来越不适应现代人的居住要求。我们的整体家
+	居公司反对落后家居观念而倡导现代健康环保，时尚的家居消费理念。公司拥有5000平米家具制造厂和高端精品
+	家具设计工作室。针对高端家居市场提供高品位板式家具。系列家具专业提供私人化家具订制，将家具设计纳入
+	室内装修设计过程。可充分利用房屋空间进行外型及功能设计。产品以高级铝钛金属框架和高档板材搭配组合安
+	装拆卸快捷方便，并全部在工厂完成加工生产，有效避免传统家具现场制作产生的油漆和噪音污染。达到欧洲E1
+	级环保检验标准。产品设计构造更合理，使衣物存储更科学，外型更美观。产品类型包括步入式衣帽间、衣柜书
+	柜等9大系列100多种型号民用家私，以及即将开发的现代板式办公家具。公司引进全套德国制造设备，流水生产
+	线，引进欧洲现代工厂管理制度及质量检查标准。以创造欧洲生活标准为服务理念，引导家居消费推广家居文化
+	为经营理念。
+</pre>
+					</div>
+				</div>
+				<!--<!--脚部-->
+				<div id="foot">
+			<div id="footzhong">
+				<div id="footzuo">
+					<div id="footzi1">地址：山西太原市南内环长治路恒地大厦26层</div>
+					<div id="footzi2">电话：200-666-8888</div>
+					<div id="footzi3">www.shanxihddsgongyoujit</div>
+				</div>
+				<div id="footyou">
+					<div id="footzi4">在线客服</div>
+					<div id="footqq"></div>
+					<div id="footwx"></div>
+					<div id="footfx"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
