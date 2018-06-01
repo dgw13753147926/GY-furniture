@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>咨询中心</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			#dbox {
+				/*最大得盒子*/
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			#navigation {
+				/*导航栏*/
+				width: 100%;
+				height: 200px;
+				background: #e4e2e2;
+			}
+			
+			#navigation_black {
+				/*导航栏中得黑条*/
+				width: 100%;
+				height: 150px;
+				background: black;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			#navigation_black_box {
+				/*导航栏中黑条得盒子*/
+				height: 150px;
+				width: 1200px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#iconbox {
+				/*共友家居图标盒子*/
+				width: 201px;
+				height: 82;
+				position: absolute;
+				top: 41px;
+				left: 28px;
+			}
+			
+			#blank {
+				width: 321px;
+				height: 150px;
+				position: absolute;
+				left: 229px;
+			}
+			
+			#call {
+				/*电话图标*/
+				height: 40px;
+				width: 300px;
+				color: #ffffff;
+				position: absolute;
+				left: 550px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#call1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#call2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#call3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#shop {
+				/*商城*/
+				height: 40px;
+				width: 125px;
+				color: #ffffff;
+				position: absolute;
+				left: 855px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#shop1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#shop2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#shop3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#user {
+				/*用户*/
+				height: 40px;
+				width: 180px;
+				color: #ffffff;
+				position: absolute;
+				left: 980px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#user1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#user2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#user3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#menu {
+				/*菜单*/
+				width: 1200px;
+				height: 50px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#menu1 {
+				list-style: none;
+			}
+			
+			.menu2 {
+				float: left;
+				text-align: center;
+				text-decoration: none;
+				margin-left: 95px;
+			}
+			
+			#menu3 {
+				margin-right: 48px;
+			}
+			
+			#menu4 {
+				margin-right: 22px;
+			}
+			
+			.menu5 {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.menu5:visited {
+				color: burlywood;
+			}
+			
+			#slideshow {
+				width: 100%;
+				height: 750px;
+				margin: 0 auto;
+			}
+			#slideshow1 {
+				width: 1520px;
+				height: 750px;
+			}
+			#slideshow2{
+				width: 800px;
+				height: 72px;
+				background: #FFFFFF;
+				border-radius:50px ;
+				margin: 0 auto;
+				position: relative;
+				bottom: 100px;
+			}
+			#slideshow5{
+				width: 25px;
+				height: 25px;
+				border: 4px solid coral;
+				border-radius: 25px;
+				position: absolute;
+				left: 110px;
+				top: 18px;
+			}
+			#slideshow3{
+				font-size: 25px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				left: 150px;
+				top: 18px;
+			}
+			#slideshow4{
+				font-size: 25px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				right: 150px;
+				top: 18px;
+			}
+			#slideshow6{
+				width: 25px;
+				height: 25px;
+				border: 4px solid coral;
+				border-radius: 25px;
+				position: absolute;
+				right: 110px;
+				top: 18px;
+			}
+			#hurdle{
+				width: 1050px;
+				height: 110px;
+				margin: 0 auto;
+			}
+			.hurdle1{
+				color: black;
+				font-size: 16px;
+				margin-top: 50px;
+				float: left;
+				text-decoration: none;
+			}
+			.hurdle1:visited{
+				color: bisque;
+			}
+			#contents{
+				width: 1050px;
+				height: 1386px;
+				margin: 0 auto;
+			}
+			#contents1{
+				width: 500px;
+				height:952px;
+				background: #E4E2E2;
+				float: left;
+				position: relative;
+				
+			}
+			.contents1_1{
+				width: 110px;
+				height: 110px;
+				position: absolute;
+				top: 38px;
+				left: 28px;
+			}
+			.contents1_2{
+				font-size: 45px;
+				font-weight: 600;
+				position: absolute;
+				top: 5px;
+				left: 180px;
+			}
+			.contents1_3{
+				font-size: 20px;
+				position: absolute;
+				top:90px;
+				left: 190px;
+			}
+			.contents1_4{
+				font-size: 20px;
+				position: absolute;
+				top:180px;
+				left: 50px;
+				right: 50px;
+				line-height: 2;
+			}
+			.contents1_5{
+				height: 450px;
+				width: 500px;
+				position: absolute;
+				top:500px;
+				left: 0;
+			}
+			#contents2{
+				width: 500px;
+				height: 1100px;
+				background: #000000;
+				float: right;
+				margin-top: 285px;
+				position: relative;
+			}
+			.contents2_1{
+				width: 110px;
+				height: 110px;
+				position: absolute;
+				top: 38px;
+				left: 28px;
+			}
+			.contents2_2{
+				color: #FFFFFF;
+				font-size: 45px;
+				font-weight: 600;
+				position: absolute;
+				top: 5px;
+				left: 180px;
+			}
+			.contents2_3{
+				color: #FFFFFF;
+				font-size: 20px;
+				position: absolute;
+				top:90px;
+				left: 190px;
+			}
+			.contents2_4{
+				color: #FFFFFF;
+				font-size: 20px;
+				position: absolute;
+				top:180px;
+				left: 50px;
+				right: 50px;
+				line-height: 2;
+			}
+			.contents2_5{
+				height: 450px;
+				width: 500px;
+				position: absolute;
+				top:648px;
+				left: 0;
+			}
+			#hurdle3{
+				width: 1050px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			.hurdle4{
+				color: black;
+				font-size: 22px;
+				font-weight: 600;
+				margin-top: 10px;
+				float: right;
+				text-decoration: none;
+			}
+			.hurdle4:visited{
+				color: bisque;
+			}
+			#di{
+				height: 360px;
+				height: 100%;
+				background: #000000;
+				text-align: center;
+			}
+			#di1{
+				height: 360px;
+				width: 1100px;
+				margin: 0 auto;
+				position: relative;
+			}
+			#di2{
+				width: 516px;
+				height: 120px;
+				border: 1px solid black;
+				position: absolute;
+				top: 120px;
+				left: 0;
+			}
+			.di4{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:15px
+			}
+			.di5{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:42px
+			}
+			.di6{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:65px
+			}
+			#di3{
+				width: 185px;
+				height: 120px;
+				border: 1px solid black;
+				position: absolute;
+				top: 140px;
+				right: 0;
+			}
+			#di7{
+				display: block;
+				width: 185px;
+				height: 25px;
+				border: 2px solid #FFFFFF;
+				color: #FFFFFF;
+				text-align: center;
+				text-decoration: none;
+			}
+			#di8{
+				margin-top: 20px;
+				margin-right: 20px;
+			}
+			#di9{
+				margin-top: 20px;
+			}
+			#di10{
+				font-size: 12px;
+				color: #FFFFFF;
+				position: relative;
+				top: -10px;
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="dbox">
+			<div id="navigation">
+				<!--navigation导航栏-->
+				<div id="navigation_black">
+					<div id="navigation_black_box">
+						<div id="iconbox">
+							<img src="../img/indeximg/GYs jj_03.png" />
+							<!--icon 共友家居图标-->
+						</div>
+						<div id="blank"></div>
+						<div id="call">
+							<div id="call2">
+								<img id="call3" src="../img/indeximg/GYs_06.png" />
+							</div>
+							<div id="call1">客服/招商热线：300—233-4282&nbsp;|</div>
+						</div>
+						<div id="shop">
+							<div id="shop2">
+								<img id="shop3" src="../img/indeximg/GYs_08.png" />
+							</div>
+							<div id="shop1">共友商城</div>
+						</div>
+						<div id="user">
+							<div id="user2">
+								<img id="user3" src="../img/indeximg/GYs_08.png" />
+							</div>
+							<div id="user1">游客/经销商登陆</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu">
+					<ul id="menu1">
+						<li class="menu2">
+							<a id="menu3" class="menu5" href="#">首页</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">关于共友</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">我们得服务</a>
+						</li>
+						<li class="menu2">
+							<a id="menu4" class="menu5" href="#">资讯中心</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">加入我们</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">我们的业务</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="slideshow">
+				<img id="slideshow1" src="../img/reference center/1127_02.png" />
+				<div id="slideshow2">
+					<div id="slideshow5"></div>
+					<a id="slideshow3" href="#">新闻中心</a>
+					<a id="slideshow4" href="#">爱家计划</a>
+					<div id="slideshow6"></div>
+				</div>
+			</div>
+			<div id="hurdle">
+				<a class="hurdle1" href="">首页&gt;&gt;</a>
+				<a class="hurdle1" href="">咨询中心</a>
+			</div>
+			<div id="contents">
+				<div id="contents1">
+					<img class="contents1_1" src="../img/reference center/newlog.png"/>
+					<p class="contents1_2">新闻中心</p>
+					<p class="contents1_3">PRESS&nbsp;CENTER</p>
+					<p class="contents1_4">“共友家居于2月16日在深圳证券交易所正式挂牌上市，成功登陆A股主板。新闻中心分为三个部分分别是活动新闻，品类新闻，品牌活动。每个新闻都有相对应的活动计划。</p>
+					<img class="contents1_5" src="../img/reference center/1127_06.png"/>
+				</div>
+				<div id="contents2">
+					<img class="contents2_1" src="../img/reference center/home.png"/>
+					<p class="contents2_2">爱家计划</p>
+					<p class="contents2_3">LOVE&nbsp;PLAN</p>
+					<p class="contents2_4">“爱家计划”倡导用爱去经营家其中“爱计划”着重动员广大家庭以爱心帮助有需要的困境“家计划”则着重关注家庭“亚健康状态”，通过各种精神主张和活动引领家庭成员之间的关爱护和陪伴，让每一个家都因爱而温暖同的是它以家庭为关注对象，关怀的群体并非单一指，救助形式也不限于资金和物质，更有精神层面的帮助。</p>
+					<img class="contents2_5" src="../img/reference center/1127_09.png"/>
+				</div>
+			</div>
+			<div id="hurdle3">
+				<a class="hurdle4" href="">MORE&gt;&gt;</a>
+			</div>
+			<div id="di">
+            	<div id="di1">
+            		<div id="di2">
+            			<p class="di4">地址：山西太原市南内环长治路恒地大厦26层</p>
+            			<p class="di5">电话：200-666-8888</p>
+            			<p class="di6">www.shanxihddsgongyoujit</p>
+            		</div>
+            		<div id="di3">
+            			<a id="di7" href="#">在线客服</a>
+            			<img id="di8" src="../img/indeximg/GYs_50.png"/>
+            			<img id="di9" src="../img/indeximg/GYs_52.png"/>
+            			<p id="di10">QQ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分享</p>
+            		</div>
+            	</div>
+            </div>
+			
+			
+		</div>	
+	</body>
+</html>

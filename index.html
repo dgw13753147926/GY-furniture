@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>共友家居</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			#dbox {
+				/*最大得盒子*/
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			#navigation {
+				/*导航栏*/
+				width: 100%;
+				height: 200px;
+				background: #e4e2e2;
+			}
+			
+			#navigation_black {
+				/*导航栏中得黑条*/
+				width: 100%;
+				height: 150px;
+				background: black;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			#navigation_black_box {
+				/*导航栏中黑条得盒子*/
+				height: 150px;
+				width: 1200px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#iconbox {
+				/*共友家居图标盒子*/
+				width: 201px;
+				height: 82;
+				position: absolute;
+				top: 41px;
+				left: 28px;
+			}
+			
+			#blank {
+				width: 321px;
+				height: 150px;
+				position: absolute;
+				left: 229px;
+			}
+			
+			#call {
+				/*电话图标*/
+				height: 40px;
+				width: 300px;
+				color: #ffffff;
+				position: absolute;
+				left: 550px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#call1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#call2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#call3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#shop {
+				/*商城*/
+				height: 40px;
+				width: 125px;
+				color: #ffffff;
+				position: absolute;
+				left: 855px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#shop1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#shop2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#shop3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#user {
+				/*用户*/
+				height: 40px;
+				width: 180px;
+				color: #ffffff;
+				position: absolute;
+				left: 980px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#user1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#user2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#user3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#menu {
+				/*菜单*/
+				width: 1200px;
+				height: 50px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#menu1 {
+				list-style: none;
+			}
+			
+			.menu2 {
+				float: left;
+				text-align: center;
+				text-decoration: none;
+				margin-left: 95px;
+			}
+			
+			#menu3 {
+				margin-right: 48px;
+			}
+			
+			#menu4 {
+				margin-right: 22px;
+			}
+			
+			.menu5 {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.menu5:visited {
+				color: burlywood;
+			}
+			
+			#slideshow {
+				width: 100%;
+				height: 750px;
+			}
+			
+			.headline {
+				/*标题*/
+				width: 795px;
+				height: 305px;
+				position: relative;
+				left: 24%;
+			}
+			
+			.headline_2 {
+				color: #E4E2E2;
+				font-size: 50px;
+				position: absolute;
+				top: 58px;
+				left: 220px;
+			}
+			
+			.headline_3 {
+				font-size: 50px;
+				font-weight: 600;
+				position: absolute;
+				top: 80px;
+				left: 290px;
+			}
+			
+			#business {
+				width: 1100px;
+				height: 1150px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#business1 {
+				width: 510px;
+				height: 510px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			#business2 {
+				width: 510px;
+				height: 510px;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			
+			#business3 {
+				width: 510px;
+				height: 510px;
+				position: absolute;
+				top: 650px;
+				left: 0;
+			}
+			
+			#business4 {
+				width: 510px;
+				height: 510px;
+				position: absolute;
+				top: 650px;
+				right: 0;
+			}
+			
+			.business2 {
+				width: 500px;
+				height: 500px;
+			}
+			
+			.business1_1 {
+				width: 334px;
+				height: 334px;
+				background: rgba(248,248,255,0.6);
+				position: relative;
+				bottom: 430px;
+				left: 80px;
+			}
+			
+			.business1_1_1 {
+				font-size: 30px;
+				font-weight: 600;
+				position: absolute;
+				top: 5px;
+				left: 15px;
+			}
+			
+			.business1_1_2 {
+				display: inline-block;
+				width: 200px;
+				height: 20px;
+				position: absolute;
+				top: 80px;
+				left: 15px;
+			}
+			
+			.business1_1_3 {
+				display: inline-block;
+				width: 200px;
+				height: 20px;
+				position: absolute;
+				top: 110px;
+				left: 15px;
+			}
+			
+			.business1_1_4 {
+				display: inline-block;
+				width: 135px;
+				height: 20px;
+				position: absolute;
+				top: 140px;
+				left: 15px;
+			}
+			
+			.business1_1_5 {
+				display: inline-block;
+				width: 100px;
+				height: 40px;
+				color: #FFFFFF;
+				text-decoration: none;
+				line-height: 40px;
+				background-color: burlywood;
+				position: absolute;
+				top: 200px;
+				left: 15px;
+			}
+			
+			.business1_1_5:visited {
+				background-color: #777777;
+			}
+			
+			.business1_1_6 {
+				display: inline-block;
+				width: 100px;
+				height: 40px;
+				color: #FFFFFF;
+				text-decoration: none;
+				line-height: 40px;
+				background-color: burlywood;
+				position: absolute;
+				top: 200px;
+				left: 115px;
+			}
+			
+			.business1_1_6:visited {
+				background-color: #777777;
+			}
+			
+			#friend {/*共友*/
+				width: 100%;
+				height: 1180px;
+				background-color: #E4E2E2;
+			}
+			
+			#friend1 {
+				width: 1100px;
+				height: 1180px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#friend1_1 {
+				width: 400px;
+				height: 600px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			#friend1_1_1 {
+				font-size: 25px;
+				font-weight: 600;
+				position: relative;
+				top: 100px;
+			}
+			
+			#friend1_1_2 {
+				font-size: 14px;
+				position: relative;
+				top: 110px;
+			}
+			
+			.friend1_1_3 {
+				font-size: 14px;
+				position: relative;
+				top: 110px;
+			}
+			
+			#friend1_2 {
+				width: 700px;
+				height: 600px;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			
+			#friend2 {
+				width: 520px;
+				height:420px;
+				position: absolute;
+				left: 0;
+				top: 700px;
+			}
+			#friend3 {
+				width: 520px;
+				height:420px;
+				position: absolute;
+				right: 0;
+				top: 700px;
+			}
+			#consult{
+				width: 1100px;
+				height: 920px;
+				margin:0 auto;
+				position: relative;
+			}
+			#consult2{
+				width: 550px;
+				height: 447px;
+				background: #E4E2E2;
+				margin-left: 580px;
+			}
+			#consult1{
+				width: 600px;
+				height: 398px;
+				position: absolute;
+				left: 0px;
+				top: 17px;
+			}
+			#consult3{
+				width: 530px;
+				height: 121px;
+				background: #FFFFFF;
+				margin-left: 20px;
+				position: relative;
+				top: 152px;
+				
+			}
+			#consult4{
+				font-size: 24px;
+				font-weight: 600;
+				position: relative;
+				top: 20px;
+				right: 10px;
+				
+			}
+			#consult5{
+				font-size: 22px;
+			}
+			#consult6{
+				height: 396px;
+				width: 540px;
+				background: #E4E2E2;
+				margin-top: 50px;
+				margin-right: 20px;
+				float: left;
+				position: relative;
+				
+			}
+			#consult7{
+				height: 396px;
+				width: 540px;
+				background: #E4E2E2;
+				margin-top: 50px;
+				float: right;
+				position: relative;
+			}
+			.consult6_1{
+				height: 126px;
+				width: 110px;
+				background-color: #777777;
+				position: absolute;
+				top: -30px;
+				left: 83px;
+			}
+			.consult6_1_1{
+				font-size: 25px;
+				color: #FFFFFF;
+			}
+			.consult6_1_2{
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+			.consult6_2{
+				height: 123px;
+				width: 420px;
+				background-color:#FFFFFF;
+				position: absolute;
+				left: 83px;
+				top: 160px;
+			}
+			.consult6_2_1{
+				font-size: 25px;
+				font-weight: 600;
+			}
+			.consult6_2_2{
+				text-decoration: none;
+				color: black;
+			}
+			#joins{
+				width: 1100px;
+				height: 604px;
+				background-color: #E4E2E2;
+				margin: 0 auto;
+			}
+			#joins1{
+				width: 548px;
+				height: 600px;
+				float: left;
+			}
+			.joins1_1{
+				width: 548px;
+				height: 300px;
+				border: 1px solid #E4E2E2;
+				position: relative;
+			}
+			.joins1_1_1{
+				font-size: 25px;
+				font-weight: 600;
+				position: absolute;
+				top: 70px;
+				left: 109px;
+			}
+			.joins1_1_2{
+				width: 300px;
+				border: 0.5px dashed black;
+				margin-top: 150px;
+				margin-left: 109px;
+				
+			}
+			.joins1_1_3{
+				display: inline-block;
+				height: 60px;
+				width: 300px;
+				font-size: 14px;
+				position: absolute;
+				top:150px;
+				left: 109px;
+			}
+			#joins2{
+				width: 550px;
+				height:600px;
+				float: right;
+			}
+			#s{
+				background: #FFFFFF;
+				height: 301px;
+			}
+			#di{
+				height: 360px;
+				height: 100%;
+				background: #000000;
+				text-align: center;
+			}
+			#di1{
+				height: 360px;
+				width: 1100px;
+				margin: 0 auto;
+				position: relative;
+			}
+			#di2{
+				width: 516px;
+				height: 120px;
+				border: 1px solid black;
+				position: absolute;
+				top: 120px;
+				left: 0;
+			}
+			.di4{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:15px
+			}
+			.di5{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:42px
+			}
+			.di6{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:65px
+			}
+			#di3{
+				width: 185px;
+				height: 120px;
+				border: 1px solid black;
+				position: absolute;
+				top: 140px;
+				right: 0;
+			}
+			#di7{
+				display: block;
+				width: 185px;
+				height: 25px;
+				border: 2px solid #FFFFFF;
+				color: #FFFFFF;
+				text-align: center;
+				text-decoration: none;
+			}
+			#di8{
+				margin-top: 20px;
+				margin-right: 20px;
+			}
+			#di9{
+				margin-top: 20px;
+			}
+			#di10{
+				font-size: 12px;
+				color: #FFFFFF;
+				position: relative;
+				top: -10px;
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="dbox">
+			<div id="navigation">
+				<!--navigation导航栏-->
+				<div id="navigation_black">
+					<div id="navigation_black_box">
+						<div id="iconbox">
+							<img src="./img/indeximg/GYs jj_03.png" />
+							<!--icon 共友家居图标-->
+						</div>
+						<div id="blank"></div>
+						<div id="call">
+							<div id="call2">
+								<img id="call3" src="./img/indeximg/GYs_06.png" />
+							</div>
+							<div id="call1">客服/招商热线：300—233-4282&nbsp;|</div>
+						</div>
+						<div id="shop">
+							<div id="shop2">
+								<img id="shop3" src="./img/indeximg/GYs_08.png" />
+							</div>
+							<div id="shop1">共友商城</div>
+						</div>
+						<div id="user">
+							<div id="user2">
+								<img id="user3" src="./img/indeximg/GYs_08.png" />
+							</div>
+							<div id="user1">游客/经销商登陆</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu">
+					<ul id="menu1">
+						<li class="menu2">
+							<a id="menu3" class="menu5" href="#">首页</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">关于共友</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">我们得服务</a>
+						</li>
+						<li class="menu2">
+							<a id="menu4" class="menu5" href="#">资讯中心</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">加入我们</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">我们的业务</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="slideshow">
+				<img src="./img/indeximg/GYs_16.png" />
+			</div>
+			<div class="headline">
+				<p class="headline_2">OUR&nbsp;BUSINESS</p>
+				<p class="headline_3">我们的业务</p>
+			</div>
+			<div id="business">
+				<div id="business1">
+					<img class="business2" src="./img/indeximg/GYs_19.png" />
+					<div class="business1_1">
+						<p class="business1_1_1">卫浴</p>
+						<p class="business1_1_2">共友卫浴专注为消费者提供</p>
+						<p class="business1_1_3">时尚、健康、舒适的一体化</p>
+						<p class="business1_1_4">定制卫浴解决方案</p>
+						<p>
+							<a class="business1_1_5" href="#">查看更多</a>
+						</p>
+						<p>
+							<a class="business1_1_6" href="#">商城购买</a>
+						</p>
+					</div>
+				</div>
+				<div id="business2">
+					<img class="business2" src="./img/indeximg/GYs_21.png" />
+					<div class="business1_1">
+						<p class="business1_1_1">橱柜</p>
+						<p class="business1_1_2">共友橱柜是中国橱柜标准制</p>
+						<p class="business1_1_3">定者，连续11年蝉联全国橱</p>
+						<p class="business1_1_4">柜行业会长单位。</p>
+						<p>
+							<a class="business1_1_5" href="#">查看更多</a>
+						</p>
+						<p>
+							<a class="business1_1_6" href="#">商城购买</a>
+						</p>
+					</div>
+				</div>
+				<div id="business3">
+					<img class="business2" src="./img/indeximg/GYs_27.png" />
+					<div class="business1_1">
+						<p class="business1_1_1">隔断柜</p>
+						<p class="business1_1_2">共友隔断柜,中国全屋定制领</p>
+						<p class="business1_1_3">域的领跑品牌,产能每年73万</p>
+						<p class="business1_1_4">套,出118个国家。</p>
+						<p>
+							<a class="business1_1_5" href="#">查看更多</a>
+						</p>
+						<p>
+							<a class="business1_1_6" href="#">商城购买</a>
+						</p>
+					</div>
+				</div>
+				<div id="business4">
+					<img class="business2" src="img/indeximg/GYs_26.png" />
+					<div class="business1_1">
+						<p class="business1_1_1">电器</p>
+						<p class="business1_1_2">共友电器,坚持"厨电一体化"</p>
+						<p class="business1_1_3">理念,打造更加完善的整体</p>
+						<p class="business1_1_4">厨房配套解决方案</p>
+						<p>
+							<a class="business1_1_5" href="#">查看更多</a>
+						</p>
+						<p>
+							<a class="business1_1_6" href="#">商城购买</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="headline">
+				<p class="headline_2">ABOUT&nbsp;&nbsp;US</p>
+				<p class="headline_3">关于共友</p>
+			</div>
+			<div id="friend">
+				<div id="friend1">
+					<div id="friend1_1">
+						<p id="friend1_1_1">共友简介</p>
+						<p id="friend1_1_2">&nbsp;&nbsp;&nbsp;&nbsp;共友致力于改变每个家庭，为每</p>
+						<p class="friend1_1_3">一个家庭定制打造独一无二的家，让</p>
+						<p class="friend1_1_3">更多的家庭享受高品质生活，提高国</p>
+						<p class="friend1_1_3">人审美为目标，我们的每一款产品都</p>
+						<p class="friend1_1_3">为满足个人需求而打造。</p>
+					</div>
+					<div id="friend1_2">
+						<img id="friend1_2" src="./img/indeximg/GYs_32.png" />
+					</div>
+					<!--<div id="friend2">-->
+						<img id="friend2" src="./img/indeximg/GYs_36.png" />
+					<!--</div>-->
+					<!--<div id="friend3">-->
+						<img id="friend3" src="./img/indeximg/GYs_38.png" />
+					<!--</div>-->
+				</div>
+
+			</div>
+            <div class="headline">
+				<p class="headline_2">NEWS&nbsp;CENTER</p>
+				<p class="headline_3">咨询中心</p>
+			</div>
+            <div id="consult">
+            	<img id="consult1" src="./img/indeximg/GYs_43.png" />
+            	<div id="consult2">
+            		<div id="consult3">
+            			<p id="consult4">共友家居隆重上市，缔造家居帝国新版图</p>
+            			<p id="consult5">共友家居于2月16日在深圳证券交易所挂牌上市</p>
+            		</div>
+            	</div>
+            	<div id="consult6">
+            		<div class="consult6_1">
+            			<p class="consult6_1_1">02-16</p>
+            			<p class="consult6_1_2">2017</p>
+            			
+            		</div>
+            		<div class="consult6_2">
+            		    <p class="consult6_2_1">共友家居上市</p>
+            			<a class="consult6_2_2" href="#">查看详情&gt;&gt;</a>
+            		</div>
+            	</div>
+            	<div id="consult7">
+            		<div class="consult6_1">
+            			<p class="consult6_1_1">05-11</p>
+            			<p class="consult6_1_2">2017</p>
+            			
+            		</div>
+            		<div class="consult6_2">
+            		    <p class="consult6_2_1">共友家居:经济破与立</p>
+            			<a class="consult6_2_2" href="#">查看详情&gt;&gt;</a>
+            		</div>
+            	</div>
+            </div>
+            <div class="headline">
+				<p class="headline_2">JOIN&nbsp;US&nbsp;GY</p>
+				<p class="headline_3">加入共友</p>
+			</div>
+            <div id="joins">
+            	<div id="joins1">
+            		<div class="joins1_1">
+            			<p class="joins1_1_1">我们在招商</p>
+            			<hr class="joins1_1_2" />
+            			<p class="joins1_1_3">选择大于努力，选择与冠军同行，每一步您都会走在别人前。我们欢迎把工作当作事业来做的经销商，一起分享我们的成功！</p>
+            		</div>
+            		<div class="joins1_1">
+            			<div class="joins1_1">
+            			<p class="joins1_1_1">成为供应商</p>
+            			<hr class="joins1_1_2" />
+            			<p class="joins1_1_3">我们相信一个更好的产品，一条更好的创意，需要一个更好的同伴，一起为顾客创造更多的价值，让更多顾客选择我们的产品欢迎您成为我们的供应商！</p>
+            		</div>
+            		</div>
+            	</div>
+            	<img id="joins2" src="img/indeximg/GYs_46.png"/>
+            </div>
+            <div id="s"></div>
+            <div id="di">
+            	<div id="di1">
+            		<div id="di2">
+            			<p class="di4">地址：山西太原市南内环长治路恒地大厦26层</p>
+            			<p class="di5">电话：200-666-8888</p>
+            			<p class="di6">www.shanxihddsgongyoujit</p>
+            		</div>
+            		<div id="di3">
+            			<a id="di7" href="#">在线客服</a>
+            			<img id="di8" src="./img/indeximg/GYs_50.png"/>
+            			<img id="di9" src="./img/indeximg/GYs_52.png"/>
+            			<p id="di10">QQ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分享</p>
+            		</div>
+            	</div>
+            </div>
+            
+            
+            
+            
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>餐厅——餐椅</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			#dbox {
+				/*最大得盒子*/
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			#navigation {
+				/*导航栏*/
+				width: 100%;
+				height: 200px;
+				background: #e4e2e2;
+			}
+			
+			#navigation_black {
+				/*导航栏中得黑条*/
+				width: 100%;
+				height: 150px;
+				background: black;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			#navigation_black_box {
+				/*导航栏中黑条得盒子*/
+				height: 150px;
+				width: 1200px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#iconbox {
+				/*共友家居图标盒子*/
+				width: 201px;
+				height: 82;
+				position: absolute;
+				top: 41px;
+				left: 28px;
+			}
+			
+			#blank {
+				width: 321px;
+				height: 150px;
+				position: absolute;
+				left: 229px;
+			}
+			
+			#call {
+				/*电话图标*/
+				height: 40px;
+				width: 300px;
+				color: #ffffff;
+				position: absolute;
+				left: 550px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#call1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#call2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#call3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#shop {
+				/*商城*/
+				height: 40px;
+				width: 125px;
+				color: #ffffff;
+				position: absolute;
+				left: 855px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#shop1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#shop2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#shop3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#user {
+				/*用户*/
+				height: 40px;
+				width: 180px;
+				color: #ffffff;
+				position: absolute;
+				left: 980px;
+				top: 61px;
+				bottom: 46px;
+				float: left;
+			}
+			
+			#user1 {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#user2 {
+				height: 40px;
+				width: 40px;
+				background: #FFFFFF;
+				float: left;
+				border-radius: 40px;
+			}
+			
+			#user3 {
+				position: relative;
+				top: 2px;
+			}
+			
+			#menu {
+				/*菜单*/
+				width: 1200px;
+				height: 50px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#menu1 {
+				list-style: none;
+			}
+			
+			.menu2 {
+				float: left;
+				text-align: center;
+				text-decoration: none;
+				margin-left: 95px;
+			}
+			
+			#menu3 {
+				margin-right: 48px;
+			}
+			
+			#menu4 {
+				margin-right: 22px;
+			}
+			
+			.menu5 {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.menu5:visited {
+				color: burlywood;
+			}
+			
+			#slideshow {
+				width: 100%;
+				height: 750px;
+				margin: 0 auto;
+			}
+			#slideshow1 {
+				width: 1520px;
+				height: 750px;
+			}
+			#slideshow2{
+				width: 800px;
+				height: 72px;
+				background: #FFFFFF;
+				border-radius:50px ;
+				margin: 0 auto;
+				position: relative;
+				bottom: 100px;
+			}
+			#slideshow5{
+				width: 25px;
+				height: 25px;
+				border: 4px solid coral;
+				border-radius: 25px;
+				position: absolute;
+				left: 110px;
+				top: 18px;
+			}
+			#slideshow3{
+				font-size: 25px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				left: 190px;
+				top: 18px;
+			}
+			#slideshow7{
+				width: 25px;
+				height: 25px;
+				border: 4px solid coral;
+				border-radius: 25px;
+				position: absolute;
+				left: 330px;
+				top: 18px;
+			}
+			#slideshow8{
+				font-size: 25px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				left: 370px;
+				top: 18px;
+			}
+			#slideshow9{
+				width: 25px;
+				height: 25px;
+				border: 4px solid coral;
+				border-radius: 25px;
+				position: absolute;
+				left: 510px;
+				top: 18px;
+			}
+			#slideshow10{
+				font-size: 25px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				left: 550px;
+				top: 18px;
+			}
+			
+			#hurdle{
+				width: 1050px;
+				height: 110px;
+				margin: 0 auto;
+			}
+			.hurdle1{
+				color: black;
+				font-size: 16px;
+				margin-top: 50px;
+				float: left;
+				text-decoration: none;
+			}
+			.hurdle1:visited{
+				color: bisque;
+			}
+			
+			.headline {
+				/*标题*/
+				width: 795px;
+				height: 200px;
+				position: relative;
+				left: 24%;
+			}
+			
+			.headline_2 {
+				font-size: 30px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				top: 10px;
+				left: 190px;
+			}
+			
+			.headline_3 {
+				font-size: 30px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				top: 10px;
+				left: 285px;
+			}
+			.headline_4 {
+				font-size: 30px;
+				font-weight: 600;
+				color: black;
+				text-decoration: none;
+				position: absolute;
+				top: 10px;
+				left: 420px;
+			}
+			#dining-table{
+				width: 1200px;
+				height: 700px;
+				margin: 0 auto;
+			}
+			#dining-table1{
+				width: 1200px;
+				height: 160px;
+				border: 1px solid black;
+				margin: 0 auto;
+				position: relative;
+			}
+			#triangle-up{
+				width: 0;
+				height: 0;
+				border-top: 50px solid transparent;
+				border-bottom: 50px solid transparent;
+				border-right: 80px solid black;
+				position: absolute;
+				top: 30px;
+			}
+			#triangle-up1{
+				width: 0;
+				height: 0;
+				border-top: 50px solid transparent;
+				border-bottom: 50px solid transparent;
+				border-right: 80px solid white;
+				position: absolute;
+				top: 30px;
+				left: 15px;
+			}
+			#triangle-up2{
+				width: 0;
+				height: 0;
+				border-top: 50px solid transparent;
+				border-bottom: 50px solid transparent;
+				border-left: 80px solid black;
+				position: absolute;
+				top: 30px;
+				right: 0;
+			}
+			#triangle-up3{
+				width: 0;
+				height: 0;
+				border-top: 50px solid transparent;
+				border-bottom: 50px solid transparent;
+				border-left: 80px solid white;
+				position: absolute;
+				top: 30px;
+				right: 15px;
+			}
+			#dining-table1_2{
+				position: absolute;
+				left: 130px;
+				top: 5px;
+			}
+			#dining-table1_3{
+				position: absolute;
+				left: 322px;
+				top: 5px;
+			}
+			#dining-table1_4{
+				position: absolute;
+				left: 518px;
+				top: 5px;
+			}
+			#dining-table1_5{
+				position: absolute;
+				left: 708px;
+				top: 5px;
+			}
+			#dining-table1_6{
+				position: absolute;
+				right: 130px;
+				top: 5px;
+			}
+			.dining-table1_1:visited{
+				border: 5px solid #FF7F50;
+			}
+			#leave{
+				height: 460px;
+				width: 1200px;
+				margin: 0 auto;
+				position: relative;
+				margin-bottom: 50px;
+			}
+			#leave1{
+				font-size: 40px;
+				font-weight: 600;
+				position: absolute;
+				top: 10px;
+				left: 290px;
+			}
+			.leave3{
+				font-size: 30px;
+				font-weight: 600;
+			}
+			#leave5{
+				position: absolute;
+				top: 90px;
+				left: 300px;
+			}
+			.leave2{
+				width: 400px;
+				height: 35px;
+				border: 2px solid black;
+				position: absolute;
+				left: 150px;
+			}
+			#leave4{
+				font-size: 30px;
+				background-color: #feb157;
+				width: 150px;
+				height: 50px;
+				position: absolute;
+				left: 200px;
+			}
+			#di{
+				height: 360px;
+				height: 100%;
+				background: #000000;
+				text-align: center;
+			}
+			#di1{
+				height: 360px;
+				width: 1100px;
+				margin: 0 auto;
+				position: relative;
+			}
+			#di2{
+				width: 516px;
+				height: 120px;
+				border: 1px solid black;
+				position: absolute;
+				top: 120px;
+				left: 0;
+			}
+			.di4{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:15px
+			}
+			.di5{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:42px
+			}
+			.di6{
+				font-weight:600 ;
+				color: #FFFFFF;
+				position: absolute;
+				left: 0;
+				top:65px
+			}
+			#di3{
+				width: 185px;
+				height: 120px;
+				border: 1px solid black;
+				position: absolute;
+				top: 140px;
+				right: 0;
+			}
+			#di7{
+				display: block;
+				width: 185px;
+				height: 25px;
+				border: 2px solid #FFFFFF;
+				color: #FFFFFF;
+				text-align: center;
+				text-decoration: none;
+			}
+			#di8{
+				margin-top: 20px;
+				margin-right: 20px;
+			}
+			#di9{
+				margin-top: 20px;
+			}
+			#di10{
+				font-size: 12px;
+				color: #FFFFFF;
+				position: relative;
+				top: -10px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="dbox">
+			<div id="navigation">
+				<!--navigation导航栏-->
+				<div id="navigation_black">
+					<div id="navigation_black_box">
+						<div id="iconbox">
+							<img src="../img/indeximg/GYs jj_03.png" />
+							<!--icon 共友家居图标-->
+						</div>
+						<div id="blank"></div>
+						<div id="call">
+							<div id="call2">
+								<img id="call3" src="../img/indeximg/GYs_06.png" />
+							</div>
+							<div id="call1">客服/招商热线：300—233-4282&nbsp;|</div>
+						</div>
+						<div id="shop">
+							<div id="shop2">
+								<img id="shop3" src="../img/indeximg/GYs_08.png" />
+							</div>
+							<div id="shop1">共友商城</div>
+						</div>
+						<div id="user">
+							<div id="user2">
+								<img id="user3" src="../img/indeximg/GYs_08.png" />
+							</div>
+							<div id="user1">游客/经销商登陆</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu">
+					<ul id="menu1">
+						<li class="menu2">
+							<a id="menu3" class="menu5" href="#">首页</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">关于共友</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">我们得服务</a>
+						</li>
+						<li class="menu2">
+							<a id="menu4" class="menu5" href="#">资讯中心</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">加入我们</a>
+						</li>
+						<li class="menu2">
+							<a class="menu5" href="#">我们的业务</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="slideshow">
+				<img id="slideshow1" src="../img/restaurant/restaurant_02.png" />
+				<div id="slideshow2">
+					<div id="slideshow5"></div>
+					<a id="slideshow3" href="#">客厅家具</a>
+					<div id="slideshow7"></div>
+					<a id="slideshow8" href="#">卧室家具</a>
+					<div id="slideshow9"></div>
+					<a id="slideshow10" href="#">餐厅家具</a>
+					
+				</div>
+			</div>
+			<div id="hurdle">
+				<a class="hurdle1" href="">首页&gt;&gt;</a>
+				<a class="hurdle1" href="">我们的业务&gt;&gt;</a>
+				<a class="hurdle1" href="">餐桌家具</a>
+			</div>
+			<div class="headline">
+				<a class="headline_2" href="#">餐桌&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+				<a class="headline_3" href="#">&nbsp;&nbsp;&nbsp;&nbsp;餐椅&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+				<a class="headline_4" href="#">&nbsp;&nbsp;&nbsp;&nbsp;其他</a>
+			</div>
+			<div id="dining-table"><!--dining-table 餐桌-->
+				<img src="../img/restaurant/restaurant_05.png"/>
+			</div>
+			<div id="dining-table1">
+				<div id="triangle-up"></div>
+                <div id="triangle-up1"></div>
+				<a href="#"><img class="dining-table1_1" id="dining-table1_2" src="../img/restaurant/restaurant_14.png"></img></a> 
+				<a href="#"><img class="dining-table1_1" id="dining-table1_3" src="../img/restaurant/restaurant_16.png"></img></a> 
+				<a href="#"><img class="dining-table1_1" id="dining-table1_4" src="../img/restaurant/restaurant_09.png"></img></a> 
+				<a href="#"><img class="dining-table1_1" id="dining-table1_5" src="../img/restaurant/restaurant_11.png"></img></a> 
+				<a href="#"><img class="dining-table1_1" id="dining-table1_6" src="../img/restaurant/restaurant_19.png"></img></a> 
+				<div id="triangle-up2"></div>
+                <div id="triangle-up3"></div>
+			</div>
+			<div id="leave">
+				<form action="#" method="get">
+					<p id="leave1">在线留言</p>
+					<div id="leave5">
+				        <p class="leave3">姓名：&nbsp;&nbsp;<input class="leave2" type="text" /></p>
+				        <p class="leave3">电话：&nbsp;&nbsp;<input class="leave2" type="text" /></p>
+				        <p class="leave3">Email：<input class="leave2" type="text" /></p>
+				        <p class="leave3">内容：&nbsp;&nbsp;<input class="leave2" type="text" /></p>
+					    <input id="leave4" type="submit" value="提交"/>
+					</div>
+				</form>
+				
+			</div>
+			<div id="di">
+            	<div id="di1">
+            		<div id="di2">
+            			<p class="di4">地址：山西太原市南内环长治路恒地大厦26层</p>
+            			<p class="di5">电话：200-666-8888</p>
+            			<p class="di6">www.shanxihddsgongyoujit</p>
+            		</div>
+            		<div id="di3">
+            			<a id="di7" href="#">在线客服</a>
+            			<img id="di8" src="../img/indeximg/GYs_50.png"/>
+            			<img id="di9" src="../img/indeximg/GYs_52.png"/>
+            			<p id="di10">QQ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分享</p>
+            		</div>
+            	</div>
+            </div>
+			
+			
+			
+		</div>
+	</body>
+</html>
