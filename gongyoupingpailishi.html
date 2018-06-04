@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>关于共友-共友简介</title>
 		<style type="text/css">
 			/*标题*/
-			body{
-				margin:0;
-				padding:0;
+			
+			body {
+				margin: 0;
+				padding: 0;
 			}
-			#big{
+			
+			#big {
 				width: 100%;
 				height: 100%;
 			}
-			#shang{
-				width: 1920px
-				height: 150px;
+			
+			#shang {
+				width: 1920px height: 150px;
 				background-color: black;
 			}
-			#shangzhong{
+			
+			#shangzhong {
 				width: 1142px;
 				height: 150px;
 				margin: 0 auto;
 				position: relative;
 			}
-			#logozi{
+			
+			#logozi {
 				width: 200px;
 				height: 80px;
 				background-image: url(./img/logozi.png);
@@ -32,17 +37,19 @@
 				position: absolute;
 				top: 40px;
 			}
-			#shangdianhua{
+			
+			#shangdianhua {
 				width: 40px;
 				height: 40px;
-				border-radius:50%;
+				border-radius: 50%;
 				background-image: url(./img/dianhua.png);
 				background-repeat: no-repeat;
 				position: absolute;
 				top: 60px;
 				left: 490px;
 			}
-			#shangzi1{
+			
+			#shangzi1 {
 				width: 240px;
 				height: 20px;
 				position: absolute;
@@ -51,17 +58,19 @@
 				color: white;
 				font-size: 17px;
 			}
-			#shanggouwuche{
+			
+			#shanggouwuche {
 				width: 40px;
 				height: 40px;
-				border-radius:50%;
+				border-radius: 50%;
 				background-image: url(./img/gouwuche.png);
 				background-repeat: no-repeat;
 				position: absolute;
 				top: 60px;
 				left: 800px;
 			}
-			#shangzi2{
+			
+			#shangzi2 {
 				width: 240px;
 				height: 20px;
 				position: absolute;
@@ -70,17 +79,19 @@
 				color: white;
 				font-size: 17px;
 			}
-			#shangrentou{
+			
+			#shangrentou {
 				width: 40px;
 				height: 40px;
-				border-radius:50%;
+				border-radius: 50%;
 				background-image: url(./img/rentou.png);
 				background-repeat: no-repeat;
 				position: absolute;
 				top: 60px;
 				left: 930px;
 			}
-			#shangzi3{
+			
+			#shangzi3 {
 				width: 240px;
 				height: 20px;
 				position: absolute;
@@ -89,8 +100,9 @@
 				color: white;
 				font-size: 17px;
 			}
-			#shangshuxian{
-				width:1px ;
+			
+			#shangshuxian {
+				width: 1px;
 				height: 30px;
 				border: 1px solid white;
 				position: absolute;
@@ -98,118 +110,133 @@
 				top: 65px;
 				background-color: white;
 			}
-			
 			/*一级菜单*/
+			
 			#caidan {
-	width: 100%;
-	height: 50px;
-	background-color: gray;
-}
-#caidanzhong {
-	width: 1140px;
-	height: 50px;
-	margin-left: 270px;
-	margin-top:0 ;
-}
-#caidanzi1 {
-	height: 50px;
-	line-height: 50px;
-	float: left;
-}
-#caidanzi2 {
-	height: 50px;
-	line-height: 50px;
-	float: left;
-	margin-left: 140px;
-}
-#caidanzi3 {
-	height: 50px;
-	line-height: 50px;
-	float: left;
-	margin-left: 140px;
-}
-#caidanzi4 {
-	height: 50px;
-	line-height: 50px;
-	float: left;
-	margin-left: 120px;
-}
-#caidanzi5 {
-	height: 50px;
-	line-height: 50px;
-	float: left;
-	margin-left: 140px;
-}
-#caidanzi6 {
-	height: 50px;
-	line-height: 50px;
-	float: left;
-	margin-left: 120px;
-}
-.caidan a {
-	font-size: 18px;
-	font-weight: 300;
-	color: black;
-	text-decoration: none;
-}
-.caidan a:visited {
-	color: orange;
-}
+				width: 100%;
+				height: 50px;
+				background-color: gray;
+			}
+			
+			#caidanzhong {
+				width: 1140px;
+				height: 50px;
+				margin-left: 270px;
+				margin-top: 0;
+			}
+			
+			#caidanzi1 {
+				height: 50px;
+				line-height: 50px;
+				float: left;
+			}
+			
+			#caidanzi2 {
+				height: 50px;
+				line-height: 50px;
+				float: left;
+				margin-left: 140px;
+			}
+			
+			#caidanzi3 {
+				height: 50px;
+				line-height: 50px;
+				float: left;
+				margin-left: 140px;
+			}
+			
+			#caidanzi4 {
+				height: 50px;
+				line-height: 50px;
+				float: left;
+				margin-left: 120px;
+			}
+			
+			#caidanzi5 {
+				height: 50px;
+				line-height: 50px;
+				float: left;
+				margin-left: 140px;
+			}
+			
+			#caidanzi6 {
+				height: 50px;
+				line-height: 50px;
+				float: left;
+				margin-left: 120px;
+			}
+			
+			.caidan a {
+				font-size: 18px;
+				font-weight: 300;
+				color: black;
+				text-decoration: none;
+			}
+			
+			.caidan a:visited {
+				color: orange;
+			}
 			/*头部背景图*/
+			
 			#beijing {
-	width: 100%;
-	height: 630px;
-	position: relative;
-}
-#beijingzi1 {
-	width: 100px;
-	height: 25px;
-	font-size: 25px;
-	font-weight: bold;
-	position: absolute;
-	left: 675px;
-	top: 483px;
-	font-family: "微软雅黑";
-}
-#beijingzi2 {
-	width: 100px;
-	height: 25px;
-	font-size: 25px;
-	font-weight: bold;
-	position: absolute;
-	left: 911px;
-	top: 483px;
-	font-family: "微软雅黑";
-}
-#beijingzi3 {
-	width: 100px;
-	height: 25px;
-	font-size: 25px;
-	font-weight: bold;
-	position: absolute;
-	left: 1150px;
-	top: 483px;
-	font-family: "微软雅黑";
-}
-.a a {
-	text-decoration: none;
-	color: black;
-}
-		/*二级菜单*/
+				width: 100%;
+				height: 630px;
+				position: relative;
+			}
+			
+			#beijingzi1 {
+				width: 100px;
+				height: 25px;
+				font-size: 25px;
+				font-weight: bold;
+				position: absolute;
+				left: 675px;
+				top: 483px;
+				font-family: "微软雅黑";
+			}
+			
+			#beijingzi2 {
+				width: 100px;
+				height: 25px;
+				font-size: 25px;
+				font-weight: bold;
+				position: absolute;
+				left: 911px;
+				top: 483px;
+				font-family: "微软雅黑";
+			}
+			
+			#beijingzi3 {
+				width: 100px;
+				height: 25px;
+				font-size: 25px;
+				font-weight: bold;
+				position: absolute;
+				left: 1150px;
+				top: 483px;
+				font-family: "微软雅黑";
+			}
+			
+			.a a {
+				text-decoration: none;
+				color: black;
+			}
+			/*二级菜单*/
+			
 			#caidan2 {
 				width: 60%;
 				height: 80px;
 				margin: 0 auto;
 				/*background-color: red;*/
 			}
+			
 			#caidan2zi2 {
 				width: 180px;
 				height: 80px;
 				/*background-color: gold;*/
 				line-height: 80px;
 				float: right;
-				margin-right:688px;
-				
+				margin-right: 688px;
 			}
 			
 			#caidan2zi1 a {
@@ -221,13 +248,15 @@
 			#caidan2 {
 				position: relative;
 			}
-		/*身体中第一块*/	
-			#stzhong{
+			/*身体中第一块*/
+			
+			#stzhong {
 				width: 60%;
 				height: 770px;
 				margin: 0 auto;
 			}
-			#st1title{
+			
+			#st1title {
 				width: 100%;
 				height: 80px;
 				position: relative;
@@ -239,7 +268,8 @@
 				font-family: "宋体";
 				font-size: 48px;
 			}
-			#st1titlebeijingzi{
+			
+			#st1titlebeijingzi {
 				width: 150px;
 				height: 50px;
 				/*background-color: red;*/
@@ -251,15 +281,16 @@
 				top: 15px;
 				left: 420px;
 			}
-		/*身体第一块背景图*/
-			#st1beijing{
+			/*身体第一块背景图*/
+			
+			#st1beijing {
 				width: 100%;
 				height: 690px;
 				background-image: url(img/j5.png);
 				position: relative;
 			}
 			
-			#st1zi{
+			#st1zi {
 				width: 100%;
 				height: 349px;
 				/*background-color: red;*/
@@ -267,54 +298,62 @@
 				left: 51px;
 				top: 110px;
 			}
-			#st1zi p{
+			
+			#st1zi p {
 				font-family: "黑体";
 				font-size: 18px;
 				font-weight: 300;
 			}
-			
 			/*脚部*/
-			#foot{
+			
+			#foot {
 				width: 100%;
 				height: 264px;
 				background-color: #111111;
 			}
-			#footzhong{
+			
+			#footzhong {
 				width: 1100px;
 				height: 264px;
 				margin: 0 auto;
 			}
-			#footzuo{
+			
+			#footzuo {
 				width: 520px;
 				height: 264px;
 				float: left;
 				position: relative;
 			}
-			#footzi1{
+			
+			#footzi1 {
 				font-size: 25px;
 				font-weight: 700;
 				color: white;
 				margin-top: 75px;
 			}
-			#footzi2{
+			
+			#footzi2 {
 				font-size: 25px;
 				font-weight: 700;
 				color: white;
 				margin-top: 25px;
 			}
-			#footzi3{
+			
+			#footzi3 {
 				font-size: 25px;
 				font-weight: 700;
 				color: white;
 				margin-top: 25px;
 			}
-			#footyou{
+			
+			#footyou {
 				width: 185px;
-				height:264px ;
+				height: 264px;
 				float: right;
 				position: relative;
 			}
-			#footzi4{
+			
+			#footzi4 {
 				width: 185px;
 				height: 30px;
 				border: 3px solid white;
@@ -325,7 +364,8 @@
 				font-weight: 700;
 				margin-top: 90px;
 			}
-			#footqq{
+			
+			#footqq {
 				width: 25px;
 				height: 60px;
 				background-image: url(./img/qq.png);
@@ -333,7 +373,8 @@
 				position: absolute;
 				top: 140px;
 			}
-			#footwx{
+			
+			#footwx {
 				width: 40px;
 				height: 60px;
 				background-image: url(./img/wx.png);
@@ -342,7 +383,8 @@
 				top: 143px;
 				left: 73px;
 			}
-			#footfx{
+			
+			#footfx {
 				width: 35px;
 				height: 80px;
 				background-image: url(./img/fx.png);
@@ -353,6 +395,7 @@
 			}
 		</style>
 	</head>
+
 	<body>
 		<div id="bigdiv">
 			<div id="shang">
@@ -368,71 +411,70 @@
 				</div>
 			</div>
 			<!--标题结束上-->
-				<!--菜单-->
-		<div id="caidan">
-			<div id="caidanzhong">
-				<div id="caidanzi1" class="caidan">
-					<a href="#">首页</a>
-				</div>
-				<div id="caidanzi2" class="caidan">
-					<a href="#">关于共友</a>
-				</div>
-				<div id="caidanzi3" class="caidan">
-					<a href="#">我们的服务</a>
-				</div>
-				<div id="caidanzi4" class="caidan">
-					<a href="#">咨询中心</a>
-				</div>
-				<div id="caidanzi5" class="caidan">
-					<a href="#">加入我们</a>
-				</div>
-				<div id="caidanzi6" class="caidan">
-					<a href="#">我们的业务</a>
-				</div>
-			</div>
-		</div>
-				<!--一级菜单结束-->
-				<!--头部背景-->
-				<!--背景图-->
-		<div id="beijing">
-			<div id="beijingzi">
-				<img src="./img/beijing.png" style="width: 100%; height: 910;" />
-
-				<div id="beijingzi1" class="a">
-					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				</div>
-				<div id="beijingzi2" class="a">
-					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				</div>
-				<div id="beijingzi3" class="a">
-					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				</div>
-
-			</div>
-		</div>
-				<!--背景图结束-->
-				<!--二级菜单-->
-				<div id="caidan2">
-				<div id="caidan2zi1">
-				首页》 &nbsp;
-				<a href="">关于共友</a>
-				<div id="caidan2zi2">》&nbsp;品牌历史</div>
-				</div>
-			</div>
-				<!--二级菜单结束-->
-				<!--身体部分简介-->
-				<div id="stzhong">
-					<div id="st1title">
-						
-							GY&nbsp;APSTRACT
-							<div id="st1titlebeijingzi">
-								品牌历史
-							
-						</div>
+			<!--菜单-->
+			<div id="caidan">
+				<div id="caidanzhong">
+					<div id="caidanzi1" class="caidan">
+						<a href="#">首页</a>
 					</div>
-					<div id="st1beijing">
-						
-					
+					<div id="caidanzi2" class="caidan">
+						<a href="#">关于共友</a>
+					</div>
+					<div id="caidanzi3" class="caidan">
+						<a href="#">我们的服务</a>
+					</div>
+					<div id="caidanzi4" class="caidan">
+						<a href="#">咨询中心</a>
+					</div>
+					<div id="caidanzi5" class="caidan">
+						<a href="#">加入我们</a>
+					</div>
+					<div id="caidanzi6" class="caidan">
+						<a href="#">我们的业务</a>
+					</div>
+				</div>
+			</div>
+			<!--一级菜单结束-->
+			<!--头部背景-->
+			<!--背景图-->
+			<div id="beijing">
+				<div id="beijingzi">
+					<img src="./img/beijing.png" style="width: 100%; height: 910;" />
+
+					<div id="beijingzi1" class="a">
+						<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</div>
+					<div id="beijingzi2" class="a">
+						<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</div>
+					<div id="beijingzi3" class="a">
+						<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</div>
+
+				</div>
+			</div>
+			<!--背景图结束-->
+			<!--二级菜单-->
+			<div id="caidan2">
+				<div id="caidan2zi1">
+					首页》 &nbsp;
+					<a href="">关于共友</a>
+					<div id="caidan2zi2">》&nbsp;品牌历史</div>
+				</div>
+			</div>
+			<!--二级菜单结束-->
+			<!--身体部分简介-->
+			<div id="stzhong">
+				<div id="st1title">
+
+					GY&nbsp;APSTRACT
+					<div id="st1titlebeijingzi">
+						品牌历史
+
+					</div>
+				</div>
+				<div id="st1beijing">
+
 					<div id="st1zi">
 						<p>2017年6月被北京建筑装饰协会家装委员会评为"2015-2017诚信达标信得过家居市场"</p>
 						<p>2015年被法制晚报社评选为"2015年度北京卓越品牌家居市场"</p>
@@ -447,25 +489,26 @@
 						<p>2006年3月被京城主流媒体京华时报的读者评选为"京城百姓放心购物家居建材卖场"</p>
 						<p>2005年2月被北京晚报读者评为"2005年度京城百姓信赖的十大健康家居市场</p>
 					</div>
-					
+
+				</div>
+			</div>
+			<!--<!--脚部-->
+			<div id="foot">
+				<div id="footzhong">
+					<div id="footzuo">
+						<div id="footzi1">地址：山西太原市南内环长治路恒地大厦26层</div>
+						<div id="footzi2">电话：200-666-8888</div>
+						<div id="footzi3">www.shanxihddsgongyoujit</div>
 					</div>
-				</div>
-				<!--<!--脚部-->
-				<div id="foot">
-			<div id="footzhong">
-				<div id="footzuo">
-					<div id="footzi1">地址：山西太原市南内环长治路恒地大厦26层</div>
-					<div id="footzi2">电话：200-666-8888</div>
-					<div id="footzi3">www.shanxihddsgongyoujit</div>
-				</div>
-				<div id="footyou">
-					<div id="footzi4">在线客服</div>
-					<div id="footqq"></div>
-					<div id="footwx"></div>
-					<div id="footfx"></div>
+					<div id="footyou">
+						<div id="footzi4">在线客服</div>
+						<div id="footqq"></div>
+						<div id="footwx"></div>
+						<div id="footfx"></div>
+					</div>
 				</div>
 			</div>
 		</div>
-		</div>
 	</body>
+
 </html>
